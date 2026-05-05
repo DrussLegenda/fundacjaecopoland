@@ -1,0 +1,15 @@
+.DS_Store
+.playwright-cli/
+
+# Local preview/export files
+*.zip
+/*.png
+*.html
+!index.html
+
+# Working folders and source materials kept outside the live site
+deploy-live/
+fundacjaecopoland-live-root/
+fundacjaecopoland-live-root 2/
+materialy-od-ciebie/
+prompty-obrazow.md
