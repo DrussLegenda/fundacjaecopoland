@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fundacja Eco Poland | OZE, edukacja, współpraca</title>
+    <title>Fundacja Eco Poland | OZE, Czyste Powietrze i edukacja ekologiczna</title>
     <meta
       name="description"
-      content="Fundacja Eco Poland wspiera zieloną transformację poprzez edukację, partnerstwa i rozwiązania OZE."
+      content="Fundacja Eco Poland wspiera zieloną transformację, program Czyste Powietrze, edukację ekologiczną, termomodernizacje i rozwiązania OZE."
     />
+    <link rel="canonical" href="https://fundacjaecopoland.pl/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="Fundacja Eco Poland | OZE, Czyste Powietrze i edukacja ekologiczna" />
+    <meta
+      property="og:description"
+      content="Edukacja, wsparcie beneficjentów, partnerstwa i praktyczne rozwiązania OZE dla zielonej transformacji."
+    />
+    <meta property="og:url" content="https://fundacjaecopoland.pl/" />
+    <meta property="og:image" content="https://fundacjaecopoland.pl/assets/generated/house-exterior.jpeg" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260628" />
   </head>
   <body>
     <header class="site-header">
@@ -33,10 +43,10 @@
         </a>
 
         <nav class="site-nav" aria-label="Główna nawigacja">
-          <a href="#misja">Misja</a>
-          <a href="#program">Program</a>
+          <a href="#misja">Fundacja</a>
           <a href="#obszary">Obszary</a>
-          <a href="#partnerzy">Partnerzy</a>
+          <a href="#projekty">Projekty</a>
+          <a href="#wspolpraca">Współpraca</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
 
@@ -44,8 +54,8 @@
       </div>
     </header>
 
-    <main id="start">
-      <section class="hero section-observed is-visible">
+    <main>
+      <section id="start" class="hero section-observed is-visible">
         <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="shell hero-grid">
           <div class="hero-copy">
@@ -123,6 +133,8 @@
                 <img
                   src="./assets/generated/consultation.jpeg"
                   alt="Rozmowa doradcza o inwestycji i rozwiązaniach energetycznych"
+                  loading="lazy"
+                  decoding="async"
                 />
               </figure>
             </div>
@@ -187,6 +199,8 @@
               <img
                 src="./assets/generated/czyste-powietrze-before-after.jpeg"
                 alt="Dom przed i po termomodernizacji: stary budynek z dymem z komina oraz odnowiona elewacja z pompą ciepła"
+                loading="lazy"
+                decoding="async"
               />
             </figure>
           </div>
@@ -256,10 +270,37 @@
         </div>
       </section>
 
-      <section id="partnerzy" class="partners section-observed">
+      <section id="projekty" class="projects section-observed">
+        <div class="shell projects-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Projekty</p>
+            <h2>Rozwijamy inicjatywy, które łączą edukację, technologię i realną pomoc beneficjentom.</h2>
+          </div>
+
+          <div class="project-list" role="list">
+            <article role="listitem" class="project-card">
+              <span>Czyste Powietrze</span>
+              <h3>Wsparcie beneficjentów programu</h3>
+              <p>Pomagamy przejść przez formalności, zrozumieć zakres inwestycji i uporządkować dokumenty potrzebne do skutecznego działania.</p>
+            </article>
+            <article role="listitem" class="project-card">
+              <span>OZE w praktyce</span>
+              <h3>Fotowoltaika, pompy ciepła i termomodernizacja</h3>
+              <p>Łączymy wiedzę techniczną z prostą komunikacją, żeby decyzje energetyczne były zrozumiałe, rozsądne i mierzalne.</p>
+            </article>
+            <article role="listitem" class="project-card">
+              <span>Edukacja</span>
+              <h3>Świadomość ekologiczna lokalnych społeczności</h3>
+              <p>Budujemy materiały, rozmowy i działania, które tłumaczą zieloną transformację językiem ludzi, nie urzędowych tabel.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="wspolpraca" class="partners section-observed">
         <div class="shell partners-grid">
           <div class="partners-copy">
-            <p class="eyebrow">Partnerzy i wiarygodność</p>
+            <p class="eyebrow">Współpraca i partnerzy</p>
             <h2>Współpracujemy z partnerami, którzy wzmacniają skuteczność naszych działań.</h2>
             <p>
               Od 2016 roku łączymy społeczną misję z praktycznym wsparciem dla
@@ -272,28 +313,48 @@
 
           <div class="partner-strip" aria-label="Wybrani partnerzy i instytucje">
             <figure class="partner-card">
-              <img src="./assets/partners/solvoltage.svg" alt="Sol Voltage" />
+              <img
+                src="./assets/partners/solvoltage.svg"
+                alt="Sol Voltage"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>
                 <strong>Sol Voltage</strong>
                 <span>Rodzinna firma rozwijająca fotowoltaikę, pompy ciepła, magazyny energii i wsparcie przy dotacjach OZE.</span>
               </figcaption>
             </figure>
             <figure class="partner-card">
-              <img src="./assets/partners/greentime.png" alt="Green Time" />
+              <img
+                src="./assets/partners/greentime.png"
+                alt="Green Time"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>
                 <strong>Green Time</strong>
                 <span>Spółka rozwijająca rozwiązania OZE, obejmujące fotowoltaikę, przydomowe turbiny wiatrowe oraz systemy BMS / Smart Home.</span>
               </figcaption>
             </figure>
             <figure class="partner-card">
-              <img src="./assets/partners/ventus-energia.png" alt="Ventus Energia" />
+              <img
+                src="./assets/partners/ventus-energia.png"
+                alt="Ventus Energia"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>
                 <strong>Ventus Energia</strong>
                 <span>100% polski producent turbin wiatrowych, działający na polskim rynku od 20 lat.</span>
               </figcaption>
             </figure>
             <figure class="partner-card">
-              <img src="./assets/reference/image2.png" alt="Symbol współpracy instytucjonalnej" />
+              <img
+                src="./assets/reference/image2.png"
+                alt="Symbol współpracy instytucjonalnej"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>
                 <strong>Ministerstwo Klimatu i Środowiska</strong>
                 <span>Współpraca instytucjonalna i udział w rozmowach dotyczących kierunku zmian w obszarze transformacji energetycznej.</span>
@@ -303,6 +364,8 @@
               <img
                 src="./assets/reference/image3.png"
                 alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej"
+                loading="lazy"
+                decoding="async"
               />
               <figcaption>
                 <strong>NFOŚiGW i WFOŚiGW</strong>
@@ -335,6 +398,8 @@
               <img
                 src="./assets/team/krzysztof-golewski-white.jpg"
                 alt="Krzysztof Golewski, prezes fundacji"
+                loading="lazy"
+                decoding="async"
               />
               <div class="team-card__body">
                 <span>Prezes</span>
@@ -346,6 +411,8 @@
               <img
                 src="./assets/team/tomasz-mitoraj-white.jpg"
                 alt="Tomasz Mitoraj, prokurent fundacji"
+                loading="lazy"
+                decoding="async"
               />
               <div class="team-card__body">
                 <span>Prokurent</span>
@@ -357,6 +424,8 @@
               <img
                 src="./assets/team/malgorzata-dabrowska.jpeg"
                 alt="Adwokat Małgorzata Dąbrowska, prawnik fundacji"
+                loading="lazy"
+                decoding="async"
               />
               <div class="team-card__body">
                 <span>Prawnik Fundacji</span>
@@ -366,19 +435,10 @@
             </article>
             <article role="listitem" class="team-card team-card--portrait">
               <img
-                src="./assets/team/aleksandra-marciniak-white.jpg"
-                alt="Aleksandra Marciniak, dział umów i administracji"
-              />
-              <div class="team-card__body">
-                <span>Dział Umów i Administracji</span>
-                <h3>Aleksandra Marciniak</h3>
-                <p>Umowy, administracja i sprawny obieg dokumentów wspierający codzienną pracę fundacji.</p>
-              </div>
-            </article>
-            <article role="listitem" class="team-card team-card--portrait">
-              <img
                 src="./assets/team/piotr-hiszpanski-white.jpg"
                 alt="Piotr Hiszpański, wspólnik fundacji"
+                loading="lazy"
+                decoding="async"
               />
               <div class="team-card__body">
                 <span>Wspólnik Fundacji</span>
@@ -396,6 +456,8 @@
             <img
               src="./assets/generated/fundacja-car-with-logo-1732.jpeg"
               alt="Przedstawiciel fundacji rozmawia z klientami przy odnowionym domu i samochodzie fundacji"
+              loading="lazy"
+              decoding="async"
             />
           </figure>
 
@@ -456,6 +518,22 @@
               <strong>biuro@fundacjaecopoland.pl</strong>
             </a>
           </div>
+
+          <form class="contact-form" action="mailto:biuro@fundacjaecopoland.pl" method="post" enctype="text/plain">
+            <label>
+              <span>Imię i nazwisko</span>
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Wiadomość</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button" type="submit">Wyślij wiadomość</button>
+          </form>
         </div>
       </section>
     </main>
@@ -478,9 +556,9 @@
         <div class="footer-column">
           <span>Nawigacja</span>
           <a href="#misja">Misja</a>
-          <a href="#program">Program</a>
           <a href="#obszary">Obszary</a>
-          <a href="#partnerzy">Partnerzy</a>
+          <a href="#projekty">Projekty</a>
+          <a href="#wspolpraca">Współpraca</a>
         </div>
 
         <div class="footer-column">
@@ -490,6 +568,15 @@
           <a href="https://www.fundacjaecopoland.pl" target="_blank" rel="noreferrer">
             fundacjaecopoland.pl
           </a>
+        </div>
+
+        <div class="footer-column footer-formal">
+          <span>Dane formalne</span>
+          <p>FUNDACJA ECO POLAND</p>
+          <p>KRS: 0000634029</p>
+          <p>NIP: 6040174494</p>
+          <p>REGON: 365525760</p>
+          <p>ul. Płk. Stanisława Dąbka 203 / E8, 81-155 Gdynia</p>
         </div>
       </div>
     </footer>

@@ -199,6 +199,7 @@ a {
 .hero h1,
 .section-heading h2,
 .program-copy h2,
+.projects-grid h2,
 .partners-copy h2,
 .journey-copy h2,
 .contact-copy h2 {
@@ -221,6 +222,7 @@ a {
 .hero-lead,
 .overview-text p,
 .program-copy p,
+.project-card p,
 .partners-copy p,
 .journey-copy p,
 .contact-copy p {
@@ -346,6 +348,7 @@ a {
 .overview,
 .program,
 .domains,
+.projects,
 .partners,
 .team,
 .journey,
@@ -396,6 +399,7 @@ a {
 
 .pillars article,
 .domain-list article,
+.project-card,
 .team-list article {
   padding: 24px 0;
   border-bottom: 1px solid var(--line);
@@ -403,6 +407,7 @@ a {
 
 .pillars h3,
 .domain-list h3,
+.project-card h3,
 .team-list h3 {
   margin: 0 0 10px;
   font-size: 1.3rem;
@@ -522,6 +527,40 @@ a {
   grid-template-columns: 84px minmax(0, 240px) minmax(0, 1fr);
   gap: 24px;
   align-items: start;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 46px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 28px;
+  border: 1px solid rgba(18, 37, 31, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 14px 38px rgba(18, 37, 31, 0.08);
+}
+
+.project-card span {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-card p {
+  margin: 0;
 }
 
 .partner-strip {
@@ -798,13 +837,54 @@ a {
   font-size: clamp(1.2rem, 2vw, 1.7rem);
 }
 
+.contact-form {
+  grid-column: 2;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-form span {
+  color: rgba(248, 246, 241, 0.72);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f8f6f1;
+  font: inherit;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(248, 246, 241, 0.52);
+  background: rgba(255, 255, 255, 0.16);
+}
+
 .site-footer {
   padding: 0 0 64px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(180px, 0.5fr));
+  grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(170px, 0.5fr));
   gap: 36px;
   padding-top: 34px;
   border-top: 1px solid rgba(18, 37, 31, 0.12);
@@ -821,6 +901,7 @@ a {
 
 .footer-brand p,
 .footer-column a,
+.footer-column p,
 .footer-column span {
   color: var(--ink-soft);
 }
@@ -853,6 +934,11 @@ a {
 
 .footer-column a:hover {
   color: var(--green-deep);
+}
+
+.footer-formal p {
+  margin: 0;
+  line-height: 1.45;
 }
 
 .has-js .section-observed {
@@ -929,6 +1015,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
   .team-card--portrait {
     grid-template-columns: 132px minmax(0, 1fr);
   }
@@ -945,6 +1035,10 @@ a {
   .journey-steps {
     grid-template-columns: 1fr;
   }
+
+  .contact-form {
+    grid-column: auto;
+  }
 }
 
 @media (max-width: 760px) {
@@ -952,9 +1046,26 @@ a {
     padding: 12px 0;
   }
 
+  .header-row {
+    gap: 14px;
+  }
+
+  .brand-mark {
+    width: 44px;
+    height: 44px;
+  }
+
   .brand-copy span,
   .button--ghost {
     display: none;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    overflow-x: visible;
+    padding-bottom: 0;
+    font-size: 0.9rem;
   }
 
   .hero {
@@ -983,6 +1094,7 @@ a {
 
   .section-heading h2,
   .program-copy h2,
+  .projects-grid h2,
   .partners-copy h2,
   .journey-copy h2,
   .contact-copy h2 {
